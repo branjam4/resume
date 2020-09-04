@@ -1,0 +1,468 @@
+#+STARTUP: overview hideblocks
+#+LATEX: \documentclass[]{twentysecondcv}
+
+#+LATEX: \begin{document}
+
+#+CALL: latex-contact-info()
+
+#+RESULTS:
+#+begin_export latex
+\profilepic{my-pic.jpg}
+\cvname{Brandon Ellington}
+\cvjobtitle{Developer}
+\cvdate{June 25 1993}
+\cvaddress{United States}
+\cvnumberphone{(206)450-1343}
+\cvmail{branjam4@gmail.com}
+\cvsite{noneyet.com}
+#+end_export
+
+#+begin_export latex
+\aboutme{How often have you sought common ground with a friend, colleague, or group in a conversation, only to discover they were really only interested in advancing one point-of-view? Inspiring change in this situation can be exhausting! In both my personal and professional journey I've been fortunate enough to lend both ears and a shoulder to the unheard and underserved people around me, which led to creative opportunities to solve otherwise complex organizational issues. I'm seeking to unite my skills--synthesis, software development, and active listening--with my passion: working towards fairness, justice, and equal opportunities for everyone.}
+#+end_export
+
+#+CALL: makeskillbar()
+
+#+RESULTS:
+#+begin_export latex
+\skills{{Python/4},{Functional Programming/4.4},{Object-Oriented Programming/4},{Database Management/3.8},{DevOps/3}}
+#+end_export
+
+#+CALL: makeskillstext()
+
+#+RESULTS:
+#+begin_export latex
+\skillstext{{SQL/3},{emacs/3},{org-mode/3},{shell/2.8},{scheme/2.5},{C(++)/2.5},{clojure/2.1},{php/2},{java/1.3}}
+#+end_export
+
+#+LATEX: \makeprofile
+
+* interests
+Seeking opportunities to improve mental health, physical well-being, and the relationship with our environment using data and technology.
+
+* education
+
+#+CALL: maketi(tb=education-table,param='(:skip 2 :llfmt nil))
+
+#+RESULTS:
+#+begin_export latex
+\begin{twenty}
+  \twentyitem
+    {2017-2020}
+    {Bachelor of Science}
+    {The Evergreen State College}
+    {Majoring in Computer Science}
+  \twentyitem
+    {2017-2020}
+    {Bachelor of Arts}
+    {The Evergreen State College}
+    {Business Concentration}
+\end{twenty}
+#+end_export
+
+* awards
+
+#+CALL: mktishort(tb=awards-table)
+
+#+RESULTS:
+#+begin_export latex
+\begin{twentyshort}
+  \twentyitemshort
+    {June 2019}
+    {Innovation Across the Americas Scholarship}
+  \twentyitemshort
+    {October 2018}
+    {Equity Honors Nominee}
+  \twentyitemshort
+    {June 2017}
+    {Presidential Equity Advisor}
+\end{twentyshort}
+#+end_export
+
+* experience
+
+#+CALL: maketi(tb=experience-table)
+
+#+RESULTS:
+#+begin_export latex
+\begin{twenty}
+  \twentyitem
+    {2018-2019}
+    {CRM Lynda.com Fellowship}
+    {The Evergreen State College, Advancement}
+    {Shadowed the Project/Database Manager for the Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events.}
+  \twentyitem
+    {September 2017 - June 2018}
+    {Office Manager}
+    {Services and Activities Fee Allocation Board}
+    {Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board.}
+  \twentyitem
+    {June 2017}
+    {Enterprise Software Internship}
+    {The Evergreen State College, Computing and Communications}
+    {Learned the agile software development methodology, database management, and requirements gathering. Picked up enough to lead a requirements gathering session and sprint for the project lead when they took their vacation.}
+\end{twenty}
+#+end_export
+
+* other information
+Relevant Coursework: /United Way ALICE measurement project, Spring 2017/
+/Authorship Project, Winter 2017; Fall 2018/
+
+#+LATEX: \end{document}
+* Setup :noexport:
+** Outlining data structures
+:PROPERTIES:
+:VISIBILITY: all
+:END:   
+The twentysecondscv template contains four types of custom information:
+  - twentyitem :: a table-like custom entry item, with:
+    + date :: Not a strict category, can have ranges of dates or just one.
+    + title :: Name of [job position | degree focus]
+    + location :: Place where [job | degree] obtained
+    + description :: Expand on the meaning of ~title~
+  - twentyitemshort :: a shorter version of ~twentyitem~, with only:
+    + date 
+    + title
+  - skills/skillstext :: two sections within the sidebar:
+    + skills :: skill bars from 0-6; has more visual than textual appeal
+    + skillstext :: additional skills, with text only, but still only 0-6
+  - other :: catchall term for personal information, each of which gets its own custom field.
+
+Other than those, there are two sections that simply have their =\section{name}= followed by plain text, which require virtually no fancy work to convert into the appropriate latex equivalent.
+** First: Collect data
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
+There are nine categories within the example file, seven of which I've "org-modified" for a somewhat more intuitive data entry process.
+*** Contact
+#+NAME: contact-table
+| Property      | Value              |
+|---------------+--------------------|
+| profilepic    | my-pic.jpg         |
+| cvname        | Brandon Ellington  |
+| cvjobtitle    | Developer          |
+| cvdate        | June 25 1993       |
+| cvaddress     | United States      |
+| cvnumberphone | (206)450-1343      |
+| cvmail        | branjam4@gmail.com |
+| cvsite        | noneyet.com        |
+
+The catchall =custom= category. Each of these has a =\property{value}= representation in the latex file.
+*** Education
+#+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
+
+#+END:
+**** Bachelor of Science
+:PROPERTIES:
+:DATE: 2017-2020
+:LOCATION: The Evergreen State College
+:DESCRIPTION: Majoring in Computer Science
+:END:
+**** Bachelor of Arts
+:PROPERTIES:
+:DATE: 2017-2020
+:LOCATION: The Evergreen State College
+:DESCRIPTION: Business Concentration
+:END:
+*** Awards
+#+BEGIN: propview :cols (DATE ITEM)
+
+#+END:
+**** Innovation Across the Americas Scholarship
+:PROPERTIES:
+:DATE: June 2019
+:END:
+**** Equity Honors Nominee
+:PROPERTIES:
+:DATE: Oct. 2018
+:END:
+**** Presidential Equity Advisor
+:PROPERTIES:
+:DATE: June 2017
+:END:
+*** Experience
+#+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
+
+#+END:
+**** CRM Lynda.com Fellow
+:PROPERTIES:
+:DATE: 2018-2019
+:LOCATION: The Evergreen State College, Advancement
+:DESCRIPTION: Shadowed the Project/Database Manager for the Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events.
+:END:
+**** Office Manager
+:PROPERTIES:
+:DATE: 2017 - 2018
+:LOCATION: Services and Activities Fee Allocation Board
+:DESCRIPTION: Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board.
+:END:
+**** Backend Software Development Intern
+:PROPERTIES:
+:DATE: June 2017
+:LOCATION: The Evergreen State College
+:DESCRIPTION: Learned the agile software development methodology, database management, and requirements gathering. Picked up enough to lead a requirements gathering session and sprint for the project lead when they took their vacation.
+:END:
+*** Skills
+#+BEGIN: propview :cols (ITEM VALUE)
+
+#+END:
+
+In this subtree there is an example of a [[file:20200901214515-dynamic_blocks.org][Dynamic Block]] keeping track of subtree values.
+**** Python
+:PROPERTIES:
+:Value: 4
+:END:
+**** Functional Programming
+:PROPERTIES:
+:Value: 4.4
+:END:
+**** Object-Oriented Programming
+:PROPERTIES:
+:Value: 4
+:END:
+**** Database Management
+:PROPERTIES:
+:Value: 3.8
+:END:
+**** DevOps
+:PROPERTIES:
+:Value: 3
+:END:
+*** Skills text
+#+BEGIN: propview :cols (ITEM VALUE)
+
+#+END:
+
+**** SQL
+:PROPERTIES:
+:Value: 3
+:END:
+**** emacs
+:PROPERTIES:
+:Value: 3
+:END:
+**** org-mode
+:PROPERTIES:
+:Value: 3
+:END:
+**** shell
+:PROPERTIES:
+:Value: 2.8
+:END:
+**** scheme
+:PROPERTIES:
+:Value: 2.5
+:END:
+**** C(++)
+:PROPERTIES:
+:Value: 2.5
+:END:
+**** clojure
+:PROPERTIES:
+:Value: 2.1
+:END:
+**** php
+:PROPERTIES:
+:Value: 2
+:END:
+**** java
+:PROPERTIES:
+:Value: 1.3
+:END:
+** Second: Transform data
+:PROPERTIES:
+:VISIBILITY: folded
+:END:   
+General notes:
+The ~propview~ dynamic tables need the [[doom:.local/straight/repos/org-mode/contrib/lisp/org-collector.el][org-collector]] file explicitly loaded in doom (with the ~eval-buffer~ function, or lazily with ~use-package~).
+The ~propview~ tables require ~#+NAME:~ /below/ the ~#+BEGIN:~ header for code blocks to access their contents. These lead to =error= messages in the minibuffer but in practice are harmless. In theory I could get rid of these errors by defining a custom ~propview~ dynamic org block that inserts the table name during execution.
+We'll need to run any blocks that say "~defun~" to enable other code blocks to use that code. Thought ~:prologue~ would work but it seems the focus there is on predefined setup/cleanup vs. "run this code block before this one"
+Take note of
++ how I skip lines: the ~:skip 2~ part of the ~orgtbl-to-<structure>~ function call
++ how I omit the last line: the ~:llfmt ""~ part of the ~org-combine-plists~ or ~orgtbl-to-<structure>~ function calls
+The ~propview~ tables have some extraneous information, namely the heading name's inclusion within the dynamic table, then a blank last line. Thankfully org-mode contributors recognize this common situation (among others involving a special need for customizing the format of the last line specifically), having a way to define an alternate format within ~org-combine-plists~.
+*** twentyitem/twentyitemshort
+These use:
++ ~orgtbl-to-generic~ :: to break the org table down,
++ ~org-combine-plists~ :: to construct a proper =\begin...end{twenty}= container, separating items by new lines.
+#+NAME: ticonv
+#+BEGIN_SRC elisp :exports none
+(defun orgtbl-to-twentyitem (table params)
+       "Convert the orgtbl-mode TABLE to a TwentySeconds CV {twentyitem} table."
+       (orgtbl-to-generic
+        table
+        (org-combine-plists
+         '(:tstart "\\begin{twenty}" :tend "\\end{twenty}" :lstart "  \\twentyitem\n" :lend "" :fmt "    {%s}" :llfmt "" :sep "\n")
+         params)))
+
+(defun orgtbl-to-twentyitemshort (table params)
+       "Convert the orgtbl-mode TABLE to a TwentySeconds CV {twentyitemshort} table."
+       (orgtbl-to-generic
+        table
+        (org-combine-plists
+         '(:tstart "\\begin{twentyshort}" :tend "\\end{twentyshort}" :lstart "  \\twentyitemshort\n" :lend "" :fmt "    {%s}" :llfmt "" :sep "\n")
+         params)))
+#+END_SRC
+
+#+RESULTS: ticonv
+: orgtbl-to-twentyitemshort
+
+#+NAME: maketi
+#+BEGIN_SRC elisp :var tb=education-table :var params='(:skip 2) :results latex :exports results :prologue ticonv
+(orgtbl-to-twentyitem tb params)
+#+END_SRC
+
+#+RESULTS: maketi
+#+begin_export latex
+\begin{twenty}
+  \twentyitem
+    {2017-2020}
+    {Bachelor of Science}
+    {The Evergreen State College}
+    {Majoring in Computer Science}
+\end{twenty}
+#+end_export
+
+#+NAME: mktishort
+#+BEGIN_SRC elisp :var tb=awards-table :results latex :exports results :prologue ticonv
+(orgtbl-to-twentyitemshort tb '(:skip 2))
+#+END_SRC
+
+#+RESULTS: mktishort
+#+begin_export latex
+\begin{twentyshort}
+  \twentyitemshort
+    {June 2019}
+    {Innovation Across the Americas Scholarship}
+  \twentyitemshort
+    {October 2018}
+    {Equity Honors Nominee}
+\end{twentyshort}
+#+end_export
+*** skills/skillstext
+These use ~orgtbl-to-orgtbl~ to trim the top rows and the last row, so we're left with just the data we need to work with. The example file has all these skills comma separated on one line. But ~orgtbl-to-<othertable>~ explicitly enters a new line per table row, so I send these to separate functions for the latex processing.
+
+#+NAME: skillsconv
+#+BEGIN_SRC elisp :var tb=skills-table :results raw :exports results 
+(orgtbl-to-orgtbl tb '(:skip 2 :llfmt ""))
+#+END_SRC
+
+#+RESULTS: skillsconv
+| pursuer of rabbits |    5 |
+| good manners       |    4 |
+| outgoing           |  4.3 |
+| polite             |    4 |
+| Java               | 0.01 |
+
+#+NAME: makeskillbar
+#+BEGIN_SRC elisp :var tbl=skillsconv :results latex
+(concat "\\skills{"
+        (mapconcat
+         (lambda (x)
+           (concat "{" (car x) "/" (cadr x) "}"))
+         (org-table-to-lisp tbl) ",")
+        "}")
+#+END_SRC
+
+#+RESULTS: makeskillbar
+#+begin_export latex
+\skills{{pursuer of rabbits/5},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+#+end_export
+
+#+NAME: skillstextconv
+#+BEGIN_SRC elisp :var tb=skillstext-table :results raw :exports results 
+(orgtbl-to-orgtbl tb '(:skip 2 :llfmt ""))
+#+END_SRC
+
+#+RESULTS: skillstextconv
+| lovely       | 4 |
+| narcissistic | 3 |
+
+#+NAME: makeskillstext
+#+BEGIN_SRC elisp :var tbl=skillstextconv :results latex
+(concat "\\skillstext{"
+        (mapconcat
+         (lambda (x)
+           (concat "{" (car x) "/" (cadr x) "}"))
+         (org-table-to-lisp tbl) ",")
+        "}")
+#+END_SRC
+
+#+RESULTS: makeskillstext
+#+begin_export latex
+\skillstext{{lovely/4},{narcissistic/3}}
+#+end_export
+
+*** Contact/personal info
+Similar process as the skills and skilltext, but a little simpler since we do not have to trim the table first.
+
+#+NAME: latex-contact-info
+#+BEGIN_SRC elisp :var tbl=contact-table :results latex
+(mapconcat (lambda (x) (concat "\\" (car x) "{" (cadr x) "}")) tbl "\n")
+#+END_SRC
+
+#+RESULTS: latex-contact-info
+#+begin_export latex
+\profilepic{alice.jpeg}
+\cvname{Alice}
+\cvjobtitle{Adventurer}
+\cvdate{26 November 1865}
+\cvaddress{United Kingdom}
+\cvnumberphone{+39 0325658974}
+\cvmail{alice@wonderland.com}
+\cvsite{http://en.wikipedia.org}
+#+end_export
+** Third: Load data
+:PROPERTIES:
+:VISIBILITY: folded
+:END:   
+Compare with [[file:20200902004719-twentyseconds_cv_example_static.org][TwentySeconds CV Example (Static)]]
+We can use ~org-export-dispatch~ to interactively make a =.tex= buffer/file (for comparison with the original example), or we can produce a pdf directly after setup. In either case org inserts some extra metadata into the =latex= output, which may not be what we want. So we must enable the =Body only:= option in the dispatch menu (which should be ~Ctrl+b~ while in the menu). See the below section for some troubleshooting hints.
+
+Assuming a successful build, the following produces a pdf file non-interactively, so you can use it as a hook or in a script if you choose to extend this:
+#+BEGIN_SRC elisp
+(org-latex-export-to-pdf nil nil nil 'only-body nil)
+#+END_SRC
+
+#+RESULTS:
+: /home/branjam/Downloads/cvlatex/Ellington_Resume.pdf
+
+** Troubleshooting and caveats
+:PROPERTIES:
+:VISIBILITY: folded
+:END:   
+There is (unfortunately) a lot that has to go right for a successful export:
++ Correctly using =:PROPERTIES:= so that the ~propview~ tables build properly.
++ Double checking that code blocks ran properly in the transformation step.
++ Not directly messing with the automatically constructed tables (except in the case of needing to rename it).
++ Ensuring the =\profilepic= is actually present in the stated location.
++ Ensuring this file and the =twentysecondcv.cls= file are in the same directory.
++ Having a proper =latex= builder.
++ A lack of bitrot :: The document skeleton is fragile. Were anything to change in the =twentysecondscv= codebase, this would not warn about it; it would simply build then fail, or fail to build.
+
+But with all those caveats out of the way, I have this configured for compatibility with the =twentysecondcv= template such that on the front-end someone can direct most of their focus to extracting or writing content, instead of how the latex itself works or weighing the cost of making small adjustments with introducing potential syntax errors or unintended side-effects.
+
+** Final thoughts
+:PROPERTIES:
+:VISIBILITY: folded
+:END:   
+Not configuring the code to run automatically might mean working with this file currently may be as tedious as simply editing the example latex file. This mostly was a learning experience for me: I am familiar enough with org to produce basic pdfs. But I had to look into the internals of =org-table=, =elisp= and =ox-latex= to figure out how to produce a =.pdf= file, specifically through =twentysecondcv.cls=, from an org file.
+
+My eventual intention here is showing off a resume pulled from a database, whose entries could change depending on rules set in database queries, which you would then funnel into org-mode and build on-the-fly. For example:
++ perhaps you've recorded a job's keywords within org, so you want to match skills and experience with its keywords.
++ you have a personal relationship manager integrated with org-mode, so when you form promising new professional connections, you'd like to tailor the resume you send them to their stated preferences.
+
+It is almost possible with the current file; what I lack at the moment is both:
++ a database
++ a database -> org-mode heading/table conversion strategy.
+
+* Local Variables :noexport:
+:PROPERTIES:
+:VISIBILITY: folded
+:END:   
+#+BEGIN_EXAMPLE org
+,# Local Variables:
+,# before-save-hook: org-update-all-dblocks
+,# after-save-hook: org-set-startup-visibility
+,# End:
+#+END_EXAMPLE
