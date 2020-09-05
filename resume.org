@@ -18,7 +18,9 @@
 #+end_export
 
 #+begin_export latex
-\aboutme{How often have you sought common ground with a friend, colleague, or group in a conversation, only to discover they were really only interested in advancing one point-of-view? Inspiring change in this situation can be exhausting! In both my personal and professional journey I've been fortunate enough to lend both ears and a shoulder to the unheard and underserved people around me, which led to creative opportunities to solve otherwise complex organizational issues. I'm seeking to unite my skills--synthesis, software development, and active listening--with my passion: working towards fairness, justice, and equal opportunities for everyone.}
+\aboutme{
+
+How can we create lasting change in our communities when we all have conflicting motivations? In both my personal and professional journey I've been fortunate enough to lend both ears and a shoulder to the unheard and underserved people around me, which led to creative opportunities to solve otherwise complex organizational issues. I'm seeking to unite my skills (synthesis, software development, and active listening) with my passion: working towards fairness, justice, and equal opportunities for everyone.}
 #+end_export
 
 #+CALL: makeskillbar()
@@ -38,7 +40,7 @@
 #+LATEX: \makeprofile
 
 * interests
-Seeking opportunities to improve mental health, physical well-being, and the relationship with our environment using data and technology.
+Empowering organizations to make change through improving mental health, physical well-being, and the relationship with our environment using data and technology.
 
 * education
 
@@ -58,25 +60,6 @@ Seeking opportunities to improve mental health, physical well-being, and the rel
     {The Evergreen State College}
     {Business Concentration}
 \end{twenty}
-#+end_export
-
-* awards
-
-#+CALL: mktishort(tb=awards-table)
-
-#+RESULTS:
-#+begin_export latex
-\begin{twentyshort}
-  \twentyitemshort
-    {June 2019}
-    {Innovation Across the Americas Scholarship}
-  \twentyitemshort
-    {October 2018}
-    {Equity Honors Nominee}
-  \twentyitemshort
-    {June 2017}
-    {Presidential Equity Advisor}
-\end{twentyshort}
 #+end_export
 
 * experience
@@ -104,9 +87,37 @@ Seeking opportunities to improve mental health, physical well-being, and the rel
 \end{twenty}
 #+end_export
 
-* other information
-Relevant Coursework: /United Way ALICE measurement project, Spring 2017/
-/Authorship Project, Winter 2017; Fall 2018/
+* projects
+
+#+CALL: maketi(tb=projects-table)
+
+#+RESULTS:
+#+begin_export latex
+\begin{twenty}
+  \twentyitem
+    {June 2020}
+    {Containerized Integrated Development Environment}
+    {https://github.com/branjam4/doom-emacs-docker.git}
+    {I wanted to show some of the productivity gains and programs I had leveraged while learning how to use my development environment. But even though my professor and I both had experience in this development environment, we found it challenging to share programs and configuration strategies given limited time and competing priorities. So I learned to containerize my development environment. Now anyone with Docker can try out my workflows with a couple programs (git, docker) in less than five commands, where previously it could take dozens of programs and commands.}
+  \twentyitem
+    {2019-2020}
+    {Systems Thinking Modelling Efforts}
+    {Evergreen: Self-study}
+    {Evaluation from faculty: "[Brandon] demonstrated significant expertise in understanding group and team dynamics. He had attended a meeting with the Team Entrepreneurship program and was able to translate their methodology into a systems approach. His work represents a synthesis of basic concepts from graph theory, communication, and systems theory. The origin of the work had several roots: 1. Brandon’s active participation in student governance, 2. Brandon’s interest in the application of systems theory to social systems, and 3. Brandon’s desire to improve communication and information flow in the Evergreen community."}
+  \twentyitem
+    {December 2018}
+    {Authorship- Computational Linguistics Project}
+    {Evergreen Program: Computational Linguistics}
+    {Evaluation from faculty: "Brandon worked with four other students to complete the project on computationally identifying the author of a text. Their well-coordinated final presentation provided an organized overview of their process and a discussion of both obstacles and successes. Brandon provided leadership and empowerment to newer coders by guiding the group towards a process that emphasized an algorithm and descriptive understandings of what the code needed to accomplished, as well as developing the actual code and some of the details of testing strategies. The group embodied a learning community by making a commitment to make sure that everyone understood the algorithm and the code. Brandon also demonstrated their collaborative learning skills by helping two other groups on the project."}
+  \twentyitem
+    {June 2017}
+    {Sentiment Analysis- Data Mining Project}
+    {United Way of Pierce County}
+    {Worked with a team of five to leverage sentiment analysis algorithms, collecting data in the form of tweets and posts from Facebook, to quantify how receptive Pierce County residents were to United Way's reports on understanding and assisting Pierce County's ALICE (Asset Limited, Income Constrained, Employed) population. I also went a little further and familiarized myself with the methodology and data used to identify our target demographics, which helped my team put our observations into perspective. My group recognized me as the member who went the extra mile in order to connect with our client and fill their needs.}
+\end{twenty}
+#+end_export
+
+
 
 #+LATEX: \end{document}
 * Setup :noexport:
@@ -171,59 +182,121 @@ The catchall =custom= category. Each of these has a =\property{value}= represent
 :LOCATION: The Evergreen State College
 :DESCRIPTION: Business Concentration
 :END:
-*** Awards
+*** Awards, Activities, and Achievements
 #+BEGIN: propview :cols (DATE ITEM)
 #+NAME: awards-table
-| DATE        | ITEM                                         |
-|-------------+----------------------------------------------|
-| 0           | "Awards"                                     |
-| "June 2019" | "Innovation Across the Americas Scholarship" |
-| "Oct. 2018" | "Equity Honors Nominee"                      |
-| "June 2017" | "Presidential Equity Advisor"                |
-|-------------+----------------------------------------------|
-|             |                                              |
+| DATE            | ITEM                                                         |
+|-----------------+--------------------------------------------------------------|
+| 0               | "Awards, Activities, and Achievements"                       |
+| "June 2019"     | "Innovation Across the Americas Award Recipient"             |
+| "October 2018"  | "Equity Honors Nominee"                                      |
+| "February 2018" | "Featured Speaker, DRIVE Conference 2018"                    |
+| 2018            | "Committee Member, Evergreen Culture and Climate Assessment" |
+| "2017-2018"     | "Student Representative to the Evergreen Board of Trustees"  |
+| "October 2017"  | "Speaker, Return to Evergreen Governor's Mansion Event"      |
+| "June 2017"     | "Presidential Equity Advisor"                                |
+| "2017-2018"     | "Leader of the Geoduck Student Union"                        |
+|-----------------+--------------------------------------------------------------|
+|                 |                                                              |
 #+END:
-**** Innovation Across the Americas Scholarship
+**** Innovation Across the Americas Award Recipient
 :PROPERTIES:
 :DATE: June 2019
 :END:
 **** Equity Honors Nominee
 :PROPERTIES:
-:DATE: Oct. 2018
+:DATE: October 2018
+:END:
+**** Featured Speaker, DRIVE Conference 2018
+:PROPERTIES:
+:DATE: February 2018
+:END:
+**** Committee Member, Evergreen Culture and Climate Assessment
+:PROPERTIES:
+:DATE: 2018
+:END:
+**** Student Representative to the Evergreen Board of Trustees
+:PROPERTIES:
+:DATE: 2017-2018
+:END:
+**** Speaker, Return to Evergreen Governor's Mansion Event
+:PROPERTIES:
+:DATE: October 2017
 :END:
 **** Presidential Equity Advisor
 :PROPERTIES:
 :DATE: June 2017
 :END:
+**** Leader of the Geoduck Student Union
+:PROPERTIES:
+:DATE: 2017-2018
+:END:
 *** Experience
 #+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
 #+NAME: experience-table
-| DATE          | ITEM                                  | LOCATION                                       | DESCRIPTION                                                                                                                                                                                                                             |
-|---------------+---------------------------------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0             | "Experience"                          | 0                                              | 0                                                                                                                                                                                                                                       |
-| "2018-2019"   | "CRM Lynda.com Fellow"                | "The Evergreen State College, Advancement"     | "Shadowed the Project/Database Manager for the Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events." |
-| "2017 - 2018" | "Office Manager"                      | "Services and Activities Fee Allocation Board" | "Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board."                                            |
-| "June 2017"   | "Backend Software Development Intern" | "The Evergreen State College"                  | "Learned the agile software development methodology, database management, and requirements gathering. Picked up enough to lead a requirements gathering session and sprint for the project lead when they took their vacation."         |
-|---------------+---------------------------------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|               |                                       |                                                |                                                                                                                                                                                                                                         |
+| DATE        | ITEM                             | LOCATION                                         | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|-------------+----------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0           | "Experience"                     | 0                                                | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| "2018-2019" | "CRM Lynda.com Fellowship"       | "The Evergreen State College, Advancement"       | "Shadowed the Assistant Director of Advancement Services. Learned how to use the Blackbaud Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events."                                                                                                                                                                                                          |
+| "2017-2018" | "Office Manager"                 | "Services and Activities Fee Allocation Board"   | "Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board."                                                                                                                                                                                                                                                                                                 |
+| "June 2017" | "Enterprise Software Internship" | "Computing and Communications Dept. (Evergreen)" | "Evaluation from my field supervisor, Senior Systems Analyst: \"Brandon's communication skills were particularly valuable to the team. He facilitated requirements gathering sessions with the users in my absence...He was always willing to adjust coding styles and practices to the team approach. He was the only intern I've ever trusted to lead sprint planning sessions, because he had developed the appropriate soft skills, and because he seemed to grasp the Agile process.\"" |
+|-------------+----------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|             |                                  |                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 #+END:
-**** CRM Lynda.com Fellow
+**** CRM Lynda.com Fellowship
 :PROPERTIES:
 :DATE: 2018-2019
 :LOCATION: The Evergreen State College, Advancement
-:DESCRIPTION: Shadowed the Project/Database Manager for the Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events.
+:DESCRIPTION: Shadowed the Assistant Director of Advancement Services. Learned how to use the Blackbaud Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events.
 :END:
 **** Office Manager
 :PROPERTIES:
-:DATE: 2017 - 2018
+:DATE: 2017-2018
 :LOCATION: Services and Activities Fee Allocation Board
 :DESCRIPTION: Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board.
 :END:
-**** Backend Software Development Intern
+**** Enterprise Software Internship
 :PROPERTIES:
 :DATE: June 2017
-:LOCATION: The Evergreen State College
-:DESCRIPTION: Learned the agile software development methodology, database management, and requirements gathering. Picked up enough to lead a requirements gathering session and sprint for the project lead when they took their vacation.
+:LOCATION: Computing and Communications Dept. (Evergreen)
+:DESCRIPTION: Evaluation from my field supervisor, Senior Systems Analyst: "Brandon's communication skills were particularly valuable to the team. He facilitated requirements gathering sessions with the users in my absence...He was always willing to adjust coding styles and practices to the team approach. He was the only intern I've ever trusted to lead sprint planning sessions, because he had developed the appropriate soft skills, and because he seemed to grasp the Agile process."
+:END:
+*** Projects
+#+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
+#+NAME: projects-table
+| DATE        | ITEM                                               | LOCATION                                       | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-------------+----------------------------------------------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0           | "Projects"                                         | 0                                              | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| "June 2020" | "Containerized Integrated Development Environment" | "GitHub"                                       | "See project at https://github.com/branjam4/doom-emacs-docker.git."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| "Dec. 2018" | "Authorship- Computational Linguistics Project"    | "Evergreen Program: Computational Linguistics" | "Evaluation from faculty: \"Brandon worked with four other students to complete the project on computationally identifying the author of a text. Their well-coordinated final presentation provided an organized overview of their process and a discussion of both obstacles and successes. Brandon provided leadership and empowerment to newer coders by guiding the group towards a process that emphasized an algorithm and descriptive understandings of what the code needed to accomplished, as well as developing the actual code and some of the details of testing strategies. The group embodied a learning community by making a commitment to make sure that everyone understood the algorithm and the code. Brandon also demonstrated their collaborative learning skills by helping two other groups on the project.\"" |
+| "June 2017" | "Sentiment Analysis- Data Mining Project"          | "United Way of Pierce County"                  | "Worked with a team of five to leverage sentiment analysis algorithms, collecting data in the form of tweets and posts from Facebook, to quantify how receptive Pierce County residents were to United Way's reports on understanding and assisting Pierce County's ALICE (Asset Limited, Income Constrained, Employed) population. I also went a little further and familiarized myself with the methodology and data used to identify our target demographics, which helped my team put our observations into perspective. My group recognized me as the member who went the extra mile in order to connect with our client and fill their needs."                                                                                                                                                                                    |
+|-------------+----------------------------------------------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|             |                                                    |                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+#+END:
+
+**** Containerized Integrated Development Environment
+:PROPERTIES:
+:DATE: June 2020
+:LOCATION: GitHub
+:DESCRIPTION: See project at https://github.com/branjam4/doom-emacs-docker.git.
+:END:
+,**** Systems Thinking Modelling Efforts
+:PROPERTIES:
+:DATE: 2019-2020
+:LOCATION: Evergreen: Self-study
+:DESCRIPTION: Evaluation from faculty: "[Brandon] demonstrated significant expertise in understanding group and team dynamics. He had attended a meeting with the Team Entrepreneurship program and was able to translate their methodology into a systems approach. His work represents a synthesis of basic concepts from graph theory, communication, and systems theory. The origin of the work had several roots: 1. Brandon’s active participation in student governance, 2. Brandon’s interest in the application of systems theory to social systems, and 3. Brandon’s desire to improve communication and information flow in the Evergreen community."
+:END:
+**** Authorship- Computational Linguistics Project
+:PROPERTIES:
+:DATE: Dec. 2018
+:LOCATION: Evergreen Program: Computational Linguistics
+:DESCRIPTION: Evaluation from faculty: "Brandon worked with four other students to complete the project on computationally identifying the author of a text. Their well-coordinated final presentation provided an organized overview of their process and a discussion of both obstacles and successes. Brandon provided leadership and empowerment to newer coders by guiding the group towards a process that emphasized an algorithm and descriptive understandings of what the code needed to accomplished, as well as developing the actual code and some of the details of testing strategies. The group embodied a learning community by making a commitment to make sure that everyone understood the algorithm and the code. Brandon also demonstrated their collaborative learning skills by helping two other groups on the project."
+:END:
+**** Sentiment Analysis- Data Mining Project
+:PROPERTIES:
+:DATE: June 2017
+:LOCATION: United Way of Pierce County
+:DESCRIPTION: Worked with a team of five to leverage sentiment analysis algorithms, collecting data in the form of tweets and posts from Facebook, to quantify how receptive Pierce County residents were to United Way's reports on understanding and assisting Pierce County's ALICE (Asset Limited, Income Constrained, Employed) population. I also went a little further and familiarized myself with the methodology and data used to identify our target demographics, which helped my team put our observations into perspective. My group recognized me as the member who went the extra mile in order to connect with our client and fill their needs.
 :END:
 *** Skills
 #+BEGIN: propview :cols (ITEM VALUE)
@@ -367,6 +440,11 @@ These use:
     {Bachelor of Science}
     {The Evergreen State College}
     {Majoring in Computer Science}
+  \twentyitem
+    {2017-2020}
+    {Bachelor of Arts}
+    {The Evergreen State College}
+    {Business Concentration}
 \end{twenty}
 #+end_export
 
