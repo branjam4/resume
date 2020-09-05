@@ -510,6 +510,6 @@ It is almost possible with the current file; what I lack at the moment is both:
 #+BEGIN_EXAMPLE org
 ,# Local Variables:
 ,# before-save-hook: org-update-all-dblocks
-,# after-save-hook: org-set-startup-visibility
+,# after-save-hook: bran/org-latex-export-to-twentyseconds
 ,# End:
 #+END_EXAMPLE
