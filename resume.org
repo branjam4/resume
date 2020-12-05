@@ -9,18 +9,18 @@
 #+begin_export latex
 \profilepic{resources/muffin-avatar.jpg}
 \cvname{Brandon Ellington}
-\cvjobtitle{Developer}
+\cvjobtitle{Networked and Social Systems Engineer}
 \cvdate{June 25 1993}
 \cvaddress{United States}
 \cvnumberphone{(206)450-1343}
 \cvmail{branjam4@gmail.com}
-\cvsite{noneyet.com}
+\cvsite{branjam.dev}
 #+end_export
 
 #+begin_export latex
 \aboutme{
 
-How can we create lasting change in our communities when we all have conflicting motivations? In both my personal and professional journey I've been fortunate enough to lend both ears and a shoulder to the unheard and underserved people around me, which led to creative opportunities to solve otherwise complex organizational issues. I'm seeking to unite my skills (synthesis, software development, and active listening) with my passion: working towards fairness, justice, and equal opportunities for everyone.}
+Using metacognition to link big picture insights with individual experiences, I make critical connections to help groups move forward.}
 #+end_export
 
 #+CALL: makeskillbar()
@@ -147,16 +147,16 @@ Other than those, there are two sections that simply have their =\section{name}=
 There are nine categories within the example file, seven of which I've "org-modified" for a somewhat more intuitive data entry process.
 *** Contact
 #+NAME: contact-table
-| Property      | Value                       |
-|---------------+-----------------------------|
-| profilepic    | resources/muffin-avatar.jpg |
-| cvname        | Brandon Ellington           |
-| cvjobtitle    | Developer                   |
-| cvdate        | June 25 1993                |
-| cvaddress     | United States               |
-| cvnumberphone | (206)450-1343               |
-| cvmail        | branjam4@gmail.com          |
-| cvsite        | noneyet.com                 |
+| Property      | Value                                |
+|---------------+--------------------------------------|
+| profilepic    | resources/muffin-avatar.jpg          |
+| cvname        | Brandon Ellington                    |
+| cvjobtitle    | Networked\n +Social Systems Engineer |
+| cvdate        | June 25 1993                         |
+| cvaddress     | United States                        |
+| cvnumberphone | (206)450-1343                        |
+| cvmail        | branjam4@gmail.com                   |
+| cvsite        | branjam.dev                          |
 
 The catchall =custom= category. Each of these has a =\property{value}= representation in the latex file.
 *** Education
