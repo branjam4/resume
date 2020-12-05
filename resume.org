@@ -19,7 +19,7 @@
 
 #+begin_export latex
 \aboutme{
-I use metacognition to link big picture insights with individual experiences, I make the critical connections to help teams move forward faster.
+Using systems thinking to link big picture insights with individual experiences, I make the necessary connections to help teams move forward faster.
 
 Interests
 
@@ -178,7 +178,7 @@ The catchall =custom= category. Each of these has a =\property{value}= represent
 |-------------+-------------------------+-------------------------------+--------------------------------------------|
 | 0           | "Education"             | 0                             | 0                                          |
 | "2017-2020" | "Bachelor's of Science" | "The Evergreen State College" | "Networked and Social Systems Engineering" |
-| "2017-2020" | "Bachelor's of Arts"    | "The Evergreen State College" | "Cyberphilosophy"                          |
+| "2017-2020" | "Bachelor's of Arts"    | "The Evergreen State College" | "Philosophy"                               |
 |-------------+-------------------------+-------------------------------+--------------------------------------------|
 |             |                         |                               |                                            |
 #+END:
@@ -192,7 +192,7 @@ The catchall =custom= category. Each of these has a =\property{value}= represent
 :PROPERTIES:
 :DATE: 2017-2020
 :LOCATION: The Evergreen State College
-:DESCRIPTION: Cyberphilosophy
+:DESCRIPTION: Philosophy
 :END:
 *** Awards, Activities, and Achievements
 #+BEGIN: propview :cols (DATE ITEM)
