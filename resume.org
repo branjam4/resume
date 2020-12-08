@@ -197,19 +197,17 @@ The catchall =custom= category. Each of these has a =\property{value}= represent
 *** Awards, Activities, and Achievements
 #+BEGIN: propview :cols (DATE ITEM)
 #+NAME: awards-table
-| DATE            | ITEM                                                        |
-|-----------------+-------------------------------------------------------------|
-| 0               | "Awards, Activities, and Achievements"                      |
-| "June 2019"     | "Innovation Across the Americas Award Recipient"            |
-| "2017-2019"     | "Lynda.com CRM Advancement Fellow"                          |
-| "October 2018"  | "Equity Honors Nominee"                                     |
-| "2017-2018"     | "Student Representative to the Evergreen Board of Trustees" |
-| "February 2018" | "Featured Speaker: DRIVE Conference 2018"                   |
-| "October 2017"  | "Speaker: Return to Evergreen- Governor's Mansion Event"    |
-| "June 2017"     | "Computer Engineering Scholarship"                          |
-| "June 2017"     | "Presidential Equity Advisor"                               |
-|-----------------+-------------------------------------------------------------|
-|                 |                                                             |
+| DATE           | ITEM                                                        |
+|----------------+-------------------------------------------------------------|
+| 0              | "Awards, Activities, and Achievements"                      |
+| "June 2019"    | "Innovation Across the Americas Award Recipient"            |
+| "2017-2019"    | "Lynda.com CRM Advancement Fellow"                          |
+| "October 2018" | "Equity Honors Nominee"                                     |
+| "2017-2018"    | "Student Representative to the Evergreen Board of Trustees" |
+| "June 2017"    | "Computer Engineering Scholarship"                          |
+| "June 2017"    | "Presidential Equity Advisor"                               |
+|----------------+-------------------------------------------------------------|
+|                |                                                             |
 #+END:
 **** Innovation Across the Americas Award Recipient
 :PROPERTIES:
@@ -227,14 +225,6 @@ The catchall =custom= category. Each of these has a =\property{value}= represent
 :PROPERTIES:
 :DATE: 2017-2018
 :END:
-**** Featured Speaker: DRIVE Conference 2018
-:PROPERTIES:
-:DATE: February 2018
-:END:
-**** Speaker: Return to Evergreen- Governor's Mansion Event
-:PROPERTIES:
-:DATE: October 2017
-:END:
 **** Computer Engineering Scholarship
 :PROPERTIES:
 :DATE: June 2017
@@ -246,46 +236,46 @@ The catchall =custom= category. Each of these has a =\property{value}= represent
 *** Projects
 #+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
 #+NAME: projects-table
-| DATE          | ITEM                                                     | LOCATION                       | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|---------------+----------------------------------------------------------+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0             | "Projects"                                               | 0                              | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| "09/17-Pres." | "IPDE: Integrated \"Personal Development\" Environment"  | "GitHub"                       | "The Evergreen program \"Student-Originated Software\" demonstrated the value of computational kindness: the ethical principle of lowering the cognitive burden on ourselves and others, inspired by efficient algorithms. Within the program I created a reproducible virtual machine image of an extended cognitive system for development and personal information management, which leverages Org-mode within Emacs. I continue to use and improve the software on a daily basis. Link to my provisioning repo: https://github.com/branjam4/branos-provisioning.git" |
-| "01/19–08/19" | "Campus Systems Engagement Project"                      | "Evergreen"                    | "For my capstone, I applied systems theory and an interdisciplinary analysis of networks to augment participatory governance on campus. Through interviews and use of causal loop diagrams I identified key campus partnerships between faculty, staff, and students. My work culminated with presenting a workshop showcasing my discoveries to a group of faculty and staff in their summer institute series."                                                                                                                                                         |
-| "04/17–09/18" | "Governance Optimization Project"                        | "Evergreen Student Government" | "Inspired by the Evergreen program \"Language and Power,\" along with insights from ethics and technology seminars, I advocated for a governance optimization project involving representatives of the student body and Services and Activities Fee Allocation Board members, then led its execution. The purpose of the project was to responsibly use both bureaucratic and charismatic power to improve the student experience, through using better communication structures, technology upgrades, and a strong sense of vision."                                    |
-| "06/17-09/17" | "Enterprise Web Application Refactor- Student Elections" | "Evergreen"                    | "Engineering an enterprise web application refactor to improve student elections on campus taught me about building both technical and social trust into a system through requirements gathering, sprint planning, database design, unit testing, and version control. Systematized elements such as the Agile methodology and user-interface design increased my interest in quantifying the process of building trust itself, influencing future study. Project used PHP and Drupal."                                                                                  |
-| "04/17–06/17" | "Sentiment Analysis (ALICE awareness)"                   | "United Way of Pierce County"  | "I led a team collecting social data and using sentiment analysis within Python and R in collaboration with United Way of Pierce County to help them answer this question: ”What actions can we take to reshape the system that created Asset Limited, Income Constrained, Employed (ALICE) households?” I rose to the challenge of putting the \"social\" in \"social data mining\"- exercising initiative, soft skills, and servant leadership to ensure the project's success."                                                                                       |
-|---------------+----------------------------------------------------------+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|               |                                                          |                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| DATE          | ITEM                                                    | LOCATION                      | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|---------------+---------------------------------------------------------+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0             | "Projects"                                              | 0                             | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| "09/17-Pres." | "IPDE: Integrated \"Personal Development\" Environment" | "Personal"                    | "Created an extended cognitive system for development and personal information management, which leverages Org-mode within Emacs. Provisioned virtual machine images and Docker containers to reproduce the system. Decreased cognitive switching by between 50-100\\% for tasks such as locating and reading online documentation, running shell commands during development, version control, and developing tests and documentation with code. Increased knowledge capture and management from dozens of ideas per year to hundreds. Repo: https://github.com/branjam4/branos-provisioning.git" |
+| "01/19–08/19" | "Campus Systems Engagement Project"                     | "Evergreen"                   | "Brought together members of faculty, student government, and campus leadership to collaboratively determine shared goals, governance, and views of systems thinking. Led initiative which reduced communications delay among student, faculty, and staff leadership from once or twice per year to once or twice per quarter. Assisted in creation of a quarterly student caucus identifying opportunities for faculty and staff support. Used causal loop diagrams to recommend key internal partnerships."                                                                                      |
+| "04/17–09/18" | "Communication Optimization"                            | "With public organizations"   | "I advocated for a communication optimization project among two related organizations, then led its execution. Required technology upgrades and visioning based on systems thinking. Implementation increased weekly communications among colleagues to almost daily, improving project coordination and group resiliency. Technology upgrades reduced repetitive tasks for office staff from five hours to less than one hour, through transitioning manual budget processing and report distribution to an automated self-serve model."                                                          |
+| "06/17-09/17" | "Software Internship- Web Development"                  | "Enterprise Development Team" | "Engineered an enterprise web application refactor with PHP and Drupal. Increased code maintainability through improving documentation, test-driven development, and object-relational mapping. Learned how to speed up the development cycle through sprint planning sessions and other Agile methodologies. Learned how user stories reduce the feedback loop between ideation and execution, building both technical and social trust into systems through requirements gathering, sprint planning, database design, unit testing, and version control."                                        |
+| "04/17–06/17" | "Financial Insecurity Sentiment Analysis"               | "Public nonprofit client"     | "I led a team collecting social data and building a semi-automated sentiment analysis algorithm within Python and R in collaboration with a public nonprofit. My initiative, detailed requirements gathering, and a breakdown of the client's methodology led to reduced confusion on the team about the technical goals of the project. We used our insights and expertise to help the client improve collaborations with other organizations and communications with the community."                                                                                                             |
+|---------------+---------------------------------------------------------+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               |                                                         |                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 #+END:
 **** IPDE: Integrated "Personal Development" Environment
 :PROPERTIES:
 :DATE: 09/17-Pres.
-:LOCATION: GitHub
-:DESCRIPTION: The Evergreen program "Student-Originated Software" demonstrated the value of computational kindness: the ethical principle of lowering the cognitive burden on ourselves and others, inspired by efficient algorithms. Within the program I created a reproducible virtual machine image of an extended cognitive system for development and personal information management, which leverages Org-mode within Emacs. I continue to use and improve the software on a daily basis. Link to my provisioning repo: https://github.com/branjam4/branos-provisioning.git
+:LOCATION: Personal
+:DESCRIPTION: Created an extended cognitive system for development and personal information management, which leverages Org-mode within Emacs. Provisioned virtual machine images and Docker containers to reproduce the system. Decreased cognitive switching by between 50-100\% for tasks such as locating and reading online documentation, running shell commands during development, version control, and developing tests and documentation with code. Increased knowledge capture and management from dozens of ideas per year to hundreds. Repo: https://github.com/branjam4/branos-provisioning.git
 :END:
 **** Campus Systems Engagement Project
 :PROPERTIES:
 :DATE: 01/19–08/19
 :LOCATION: Evergreen
-:DESCRIPTION: For my capstone, I applied systems theory and an interdisciplinary analysis of networks to augment participatory governance on campus. Through interviews and use of causal loop diagrams I identified key campus partnerships between faculty, staff, and students. My work culminated with presenting a workshop showcasing my discoveries to a group of faculty and staff in their summer institute series.
+:DESCRIPTION: Brought together members of faculty, student government, and campus leadership to collaboratively determine shared goals, governance, and views of systems thinking. Led initiative which reduced communications delay among student, faculty, and staff leadership from once or twice per year to once or twice per quarter. Assisted in creation of a quarterly student caucus identifying opportunities for faculty and staff support. Used causal loop diagrams to recommend key internal partnerships.
 :END:
-**** Governance Optimization Project
+**** Communication Optimization
 :PROPERTIES:
 :DATE: 04/17–09/18
-:LOCATION: Evergreen Student Government
-:DESCRIPTION: Inspired by the Evergreen program "Language and Power," along with insights from ethics and technology seminars, I advocated for a governance optimization project involving representatives of the student body and Services and Activities Fee Allocation Board members, then led its execution. The purpose of the project was to responsibly use both bureaucratic and charismatic power to improve the student experience, through using better communication structures, technology upgrades, and a strong sense of vision.
+:LOCATION: With public organizations
+:DESCRIPTION: I advocated for a communication optimization project among two related organizations, then led its execution. Required technology upgrades and visioning based on systems thinking. Implementation increased weekly communications among colleagues to almost daily, improving project coordination and group resiliency. Technology upgrades reduced repetitive tasks for office staff from five hours to less than one hour, through transitioning manual budget processing and report distribution to an automated self-serve model.
 :END:
-**** Enterprise Web Application Refactor- Student Elections
+**** Software Internship- Web Development
 :PROPERTIES:
 :DATE: 06/17-09/17
-:LOCATION: Evergreen
-:DESCRIPTION: Engineering an enterprise web application refactor to improve student elections on campus taught me about building both technical and social trust into a system through requirements gathering, sprint planning, database design, unit testing, and version control. Systematized elements such as the Agile methodology and user-interface design increased my interest in quantifying the process of building trust itself, influencing future study. Project used PHP and Drupal.
+:LOCATION: Enterprise Development Team
+:DESCRIPTION: Engineered an enterprise web application refactor with PHP and Drupal. Increased code maintainability through improving documentation, test-driven development, and object-relational mapping. Learned how to speed up the development cycle through sprint planning sessions and other Agile methodologies. Learned how user stories reduce the feedback loop between ideation and execution, building both technical and social trust into systems through requirements gathering, sprint planning, database design, unit testing, and version control.
 :END:
-**** Sentiment Analysis (ALICE awareness)
+**** Financial Insecurity Sentiment Analysis
 :PROPERTIES:
 :DATE: 04/17–06/17
-:LOCATION: United Way of Pierce County
-:DESCRIPTION: I led a team collecting social data and using sentiment analysis within Python and R in collaboration with United Way of Pierce County to help them answer this question: ”What actions can we take to reshape the system that created Asset Limited, Income Constrained, Employed (ALICE) households?” I rose to the challenge of putting the "social" in "social data mining"- exercising initiative, soft skills, and servant leadership to ensure the project's success.
+:LOCATION: Public nonprofit client
+:DESCRIPTION: I led a team collecting social data and building a semi-automated sentiment analysis algorithm within Python and R in collaboration with a public nonprofit. My initiative, detailed requirements gathering, and a breakdown of the client's methodology led to reduced confusion on the team about the technical goals of the project. We used our insights and expertise to help the client improve collaborations with other organizations and communications with the community.
 :END:
 *** Skills
 #+BEGIN: propview :cols (ITEM VALUE)
