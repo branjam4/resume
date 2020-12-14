@@ -1,3 +1,3 @@
 #+TITLE: Resume
 
-See [[https://github.com/branjam4/resume/blob/master/resume.pdf][resume here]].
+See [[https://github.com/branjam4/resume/blob/software-dev/resume.pdf][resume here]].
