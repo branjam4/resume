@@ -1,0 +1,11 @@
+#+MACRO: FIRST    Brandon
+#+MACRO: LAST     Ellington
+#+MACRO: FULL     {{{FIRST}}} {{{LAST}}}
+#+MACRO: BLOG     branjam4@gmail.com
+#+MACRO: ADDRESS  linkedin.com/in/branjam
+#+MACRO: PHONE    (206) 450-1343
+#+MACRO: CODE     Developer Assistant
+#+MACRO: ADDRESS1 Seattle
+#+MACRO: ADDRESS2 Seattle, WA
+
+#+MACRO: HEADER \resheader{ {{{CODE}}} }{ {{{ADDRESS1}}} }{ {{{FULL}}} }{ {{{PHONE}}} }{ {{{BLOG}}} }{ {{{ADDRESS}}} }
